@@ -18,7 +18,7 @@ from mrcnn import visualize
 
 # Import COCO config
 sys.path.append(os.path.join(ROOT_DIR, "samples/coco/"))  # To find local version
-import coco
+import coco.coco as coco
 
 # %matplotlib inline
 
@@ -114,9 +114,9 @@ def color_splash(image, mask):
     return splash
 
 
-# fn_vid = "C:/_koray/test_data/highway/highway_1600.mp4"
+fn_vid = "C:/_koray/test_data/highway/highway_1600.mp4"
 # fn_vid = "C:/_koray/test_data/vid_short.mp4"
-fn_vid = "C:/_koray/test_data/aerial/mexico.mp4"
+# fn_vid = "C:/_koray/test_data/aerial/mexico.mp4"
 
 import cv2
 
